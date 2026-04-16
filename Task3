@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+
+# Residuals
+residuals = y - y_pred
+
+# Plot histogram
+plt.hist(residuals, bins=15)
+plt.title("Residuals Distribution")
+plt.xlabel("Residuals")
+plt.ylabel("Frequency")
+plt.show()
+
+# Explanation:
+# A residual is the difference between actual and predicted values (Actual - Predicted).
+# A symmetric, bell-shaped histogram suggests errors are normally distributed,
+# meaning the model fits the data well without major bias.
